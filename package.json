@@ -1,0 +1,22 @@
+{
+  "name": "debug-https",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/topicushealthcare/debug-https.git"
+  },
+  "author": "Topicus.Healthcare B.V.",
+  "bugs": {
+    "url": "https://github.com/topicushealthcare/debug-https/issues"
+  },
+  "homepage": "https://github.com/topicushealthcare/debug-https#readme",
+  "dependencies": {
+    "express": "4.17.1",
+    "stringify-object": "3.3.0"
+  }
+}
