@@ -1,0 +1,16 @@
+name: Docker Image CI
+
+on: [push]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag quay.io/topicus_zorg/debug-https:$(date +%s)
+    - name: Push the Docker image
+      run: docker push quay.io/topicus_zorg/debug-https:$(date +%s)
