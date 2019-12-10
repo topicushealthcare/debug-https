@@ -38,8 +38,8 @@ app.get("/", (req, res) => {
 })
 
 server = https.createServer({
-  key: fs.readFileSync('./cert.key'),
-  cert: fs.readFileSync('./cert.pem'),
+  key: fs.readFileSync(process.env.KEYFILE),
+  cert: fs.readFileSync(process.env.CERTFILE),
   requestCert: true, // Request client certificate
   rejectUnauthorized: false // Ingore if no client certificate is present
 }, app)
